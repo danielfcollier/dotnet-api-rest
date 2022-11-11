@@ -8,24 +8,20 @@ namespace App.Controllers;
 [Route("[controller]")]
 public class EventController : ControllerBase
 {
-    public EventController()
-    {
-    }
-
-    [HttpPost(Name = "PostEvent")]
-    [ProducesResponseType(StatusCodes.Status201Created)]
-    [ProducesResponseType(StatusCodes.Status404NotFound)]
-    public async Task<IResult> PostEvent([FromBody] Event data)
+    [HttpPost]
+    public async Task<IActionResult> PostEvent([FromBody] Event data)
     {
         try
         {
             Transaction result = await Operation.Bank.Handler(data);
 
-            return Results.Json(result);
+            // return CreatedAtAction("", result);
+            
+            return new ObjectResult(result) { StatusCode = StatusCodes.Status201Created };
         }
         catch
         {
-            return Results.NotFound(0);
+            return NotFound(0);
         }
     }
 }
