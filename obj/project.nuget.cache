@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7HDKAlZtBVUYmEcG0+4C7nZdMWL4ehWrXFcjX2XwvUsYMGhrZiirDU91JoIlUBJowZnhm1Mr9dUneWajjTuzjw==",
+  "dgSpecHash": "ci/s/GzfxieWcmFojakDOc5d2KJ/vudUcYMxrdAcrjv0FULtlqLkLASOoIaVmcvWc1mcSAaT5X+gpQT8+BwVoA==",
   "success": true,
-  "projectFilePath": "/home/collier/gitspace/portfolio/dotnet-app-api-restful/dotnet-app-api-restful.csproj",
+  "projectFilePath": "/home/collier/gitspace/portfolio/dotnet-api-restful/dotnet-app-api-restful.csproj",
   "expectedPackageFiles": [
     "/home/collier/.nuget/packages/microsoft.extensions.apidescription.server/3.0.0/microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "/home/collier/.nuget/packages/microsoft.openapi/1.2.3/microsoft.openapi.1.2.3.nupkg.sha512",

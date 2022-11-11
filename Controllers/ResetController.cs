@@ -6,18 +6,11 @@ namespace App.Controllers;
 [Route("[controller]")]
 public class ResetController : ControllerBase
 {
-    public ResetController()
-    {
-    }
-
-    [HttpPost(Name = "PostReset")]
-    [ProducesResponseType(StatusCodes.Status200OK)]
-    [ProducesResponseType(StatusCodes.Status404NotFound)]
-    public async Task<IResult> PostReset()
+    [HttpPost]
+    public async Task<ActionResult> PostReset()
     {
         await Db.Handler.Reset();
-        Results.StatusCode(200);
 
-        return Results.Text("OK");
+        return Content("OK");
     }
 }

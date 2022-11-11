@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/collier/gitspace/portfolio/dotnet-app-api-restful/dotnet-app-api-restful.csproj": {}
+    "/home/collier/gitspace/portfolio/dotnet-api-restful/dotnet-app-api-restful.csproj": {}
   },
   "projects": {
-    "/home/collier/gitspace/portfolio/dotnet-app-api-restful/dotnet-app-api-restful.csproj": {
+    "/home/collier/gitspace/portfolio/dotnet-api-restful/dotnet-app-api-restful.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/collier/gitspace/portfolio/dotnet-app-api-restful/dotnet-app-api-restful.csproj",
+        "projectUniqueName": "/home/collier/gitspace/portfolio/dotnet-api-restful/dotnet-app-api-restful.csproj",
         "projectName": "dotnet-app-api-restful",
-        "projectPath": "/home/collier/gitspace/portfolio/dotnet-app-api-restful/dotnet-app-api-restful.csproj",
+        "projectPath": "/home/collier/gitspace/portfolio/dotnet-api-restful/dotnet-app-api-restful.csproj",
         "packagesPath": "/home/collier/.nuget/packages/",
-        "outputPath": "/home/collier/gitspace/portfolio/dotnet-app-api-restful/obj/",
+        "outputPath": "/home/collier/gitspace/portfolio/dotnet-api-restful/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/collier/.nuget/NuGet/NuGet.Config"

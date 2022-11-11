@@ -8,24 +8,17 @@ namespace App.Controllers;
 [Route("[controller]")]
 public class BalanceController : ControllerBase
 {
-    public BalanceController()
+    [HttpGet]
+    public async Task<ActionResult> GetBalance([FromQuery(Name = "account_id")] string id)
     {
-    }
+        Account? data = await Db.Handler.Read(id);
+        var result = $"{data?.Balance}" ?? "Not Found";
 
-    [HttpGet(Name = "GetBalance")]
-    [ProducesResponseType(StatusCodes.Status200OK)]
-    [ProducesResponseType(StatusCodes.Status404NotFound)]
-    public async Task<IResult> GetBalance(HttpRequest request)
-    {
-    string id = request.Query["account_id"];
+        if (data is null)
+        {
+            return NotFound(0);
+        }
 
-    Account? data = await Db.Handler.Read(id);
-
-    if (data is null)
-    {
-        return Results.NotFound(0);
-    }
-
-    return Results.Ok(data.Balance);
+        return Ok(data.Balance);
     }
 }
