@@ -14,8 +14,6 @@ public class EventController : ControllerBase
         try
         {
             Transaction result = await Operation.Bank.Handler(data);
-
-            // return CreatedAtAction("", result);
             
             return new ObjectResult(result) { StatusCode = StatusCodes.Status201Created };
         }
