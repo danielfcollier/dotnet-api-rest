@@ -7,7 +7,7 @@
       "type": "process",
       "args": [
         "build",
-        "${workspaceFolder}/dotnet-app-api-restful.csproj",
+        "${workspaceFolder}/dotnet-app-api-rest.csproj",
         "/property:GenerateFullPaths=true",
         "/consoleloggerparameters:NoSummary"
       ],
@@ -19,7 +19,7 @@
       "type": "process",
       "args": [
         "publish",
-        "${workspaceFolder}/dotnet-app-api-restful.csproj",
+        "${workspaceFolder}/dotnet-app-api-rest.csproj",
         "/property:GenerateFullPaths=true",
         "/consoleloggerparameters:NoSummary"
       ],
@@ -33,7 +33,7 @@
         "watch",
         "run",
         "--project",
-        "${workspaceFolder}/dotnet-app-api-restful.csproj"
+        "${workspaceFolder}/dotnet-app-api-rest.csproj"
       ],
       "problemMatcher": "$msCompile"
     }
