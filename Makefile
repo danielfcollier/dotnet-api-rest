@@ -5,7 +5,7 @@ build-ci:
 	@dotnet build --configuration Release --no-restore
 
 run:
-	@dotnet run --project Minimal.API.Rest
+	@dotnet run --project API.Rest
 
 clean:
 	@dotnet clean
